@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyTours landing page</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/5bc54137fc.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <!------------header------------->
+    <header>
+        <a href="#" class="logo">SKY<span>TOURS </span></a>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#tour">Tours</a></li>
+            <li><a href="#about">About us</a></li> 
+            <li><a href="#contact">Contact us</a></li>
+        </ul>
+        <div class="h-right">
+            <a href="#">Follow us</a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+        </div>
+    </header>
+
+    <!------------home------------->
+    <section id="home" class="home">
+        <div class="home-text">
+            <h5>Let's</h5>
+            <h1>Make your <br>travel memorable</h1>
+            <p>You'll always have fascinating places to be and friendly people to see.</p>
+            <a href="#" class="btn">Book a trip</a>
+        </div>
+    </section>
+
+  
+      <!------------services------------->
+      <section id="services" class="services">
+        <div class="services-text">
+            <h3>services</h3>
+            <h2>What we provide for you</h2>
+        </div>
+        <div class="services-content">
+            <div class="box">
+                <img src="images/rooms.jpeg">
+                <h6>Delux Room</h6>
+            </div>
+    
+            <div class="box">
+                <img src="images/food.png">
+                <h6>Delicoius Food</h6>
+            </div>
+    
+            <div class="box">
+                <img src="images/taxi.jpeg">
+                <h6>Airport Taxi</h6>
+            </div>
+
+            <div class="box">
+                <img src="images/wifi.jpeg">
+                <h6>Free Wifi</h6>
+            </div>
+
+            <div class="box">
+                <img src="images/Medicine.jpeg">
+                <h6>Free Medication</h6>
+            </div>
+
+            <div class="box">
+                <img src="images/tour2 .jpeg">
+                <h6>Tour Guide</h6>
+            </div>
+        </div>
+    </section>
+    
+    <!----------------tour--------->
+<section id="tour" class="tour">
+    <div class="center-text">
+        <h2>Popular Tours</h2>
+    </div>
+
+    <div class="tour-content">
+        <div class="box1">
+            <img src="images/Barcelona.jpeg">
+            <h6>Spain</h6>
+            <h4>Barcelona</h4>
+        </div>
+
+        <div class="box1">
+            <img src="images/Buenos Aires, Argentina.jpeg">
+            <h6>Argentina</h6>
+            <h4>Buenos Aires</h4>
+        </div>
+
+        <div class="box1">
+            <img src="images/paris.jpeg">
+            <h6>france</h6>
+            <h4>Paris</h4>
+        </div>
+    </div>
+
+    <div class="center-btn">
+        <a href="#" class="btn">See Tours</a>
+    </div>
+</section>
+
+    <!-------------about--------------->
+    <div id="about" class="about">
+    <section class="about-us">
+        <img src="images/building.jpeg">
+        <div class="contet">
+            <h2>Welcome to SkyTours </h2>
+            <p>In our company we believe that every journey is an opportunity to create lasting memories and discover new horizons.
+                 With a passion for exploration and a commitment to exceptional service,
+                  we are dedicated to making your travel experiences unforgettable.
+            </p>
+            <button class="btn">Read More</button>
+        </div>
+    </section>
+</div>
+
+
+    <!-----------------contact----------------->
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <div class="contact-text">
+                <h2>Ready to explore?</h2>
+                <p>Let's go on vacation, make your day</p>
+            </div>
+
+            <form action="">
+                <input type="email" placeholder="Enter your email" required>
+                <input type="submit" value="Get started" class="btn" >
+            </form>
+        </div>
+    </section>
+    <!-----------------copyright----------------->
+    <div class="copyright">
+        <p>Copyright © SkyTours company </p>
+    </div>
+
+
+<script>
+    const header = document.querySelector("header");
+
+    window.addEventListener("scroll", function(){
+        header.classList.toggle("sticky", window.scrollY > 60)
+    });
+</script>
+
+</body>
+</html>
